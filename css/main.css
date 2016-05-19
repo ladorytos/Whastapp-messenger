@@ -1,12 +1,13 @@
 
 /*Inserta tu css aqui*/
-
+body {
+	background-color: #D8D8D8;
+}
 /*Header*/
 header .bg-green {
 	background-color: #009688;
 	height: 100px;
 }
-
 body {
 	background-color: #D8D8D8;
 }
@@ -16,16 +17,13 @@ body {
 	left: 50px;
 	margin-bottom: 50px;
 }
-
-
-
 /*Inicio*/
 .inicio, .laboratoriauno{
 	background-color: #E6E6E6;
 	border: 1px solid #BDBDBD;
 }
 .inicio{
-	width: 460px;
+	width: 400px;
 	height: 87px;
 	padding-left: 10px;
 }
@@ -34,7 +32,7 @@ body {
 	background-color: white;	
 }
 .icono{
-	margin-left: 380px;
+	margin-left: 310px;
 	margin-top: -40px;
 }
 .icono .glyphicon{
@@ -43,7 +41,7 @@ body {
 }
 /*Buscar*/
 .buscar{
-	width: 460px;
+	width: 400px;
 	padding: 10px;
 }
 .input-group-addon{
@@ -55,7 +53,6 @@ body {
 /*Contacto*/
 .contacto{
 	padding: 10px;
-	width: 450px;
 }
 .media{
 	margin-left:30px;
@@ -83,24 +80,24 @@ body {
 	font-size: 12px;
 	color: gray;
 }
-.scrollbar{
-	width: 460px;
-  height: 580px;
+.scroll{
+	height: 600px;
   overflow: scroll;
   overflow-x:hidden
+  margin-left: -25px;
+}
 }
 /*laboratoria*/
 .laboratoria{
-	background-image: url(../image/chat-panel-bg.png);
-	width: 625px;
-	margin-left: 50px;
+	width: 620px;
+	border: 1px solid #BDBDBD;
 }
 /*laboratoriauno*/
 .laboratoriauno{
 	padding: 10px;
 	height: 87px;
 	width: 620px;
-  margin-left: 55px;
+  margin-left: -25px;
 }
 .iconos{
 	margin-left: 540px;
@@ -110,7 +107,6 @@ body {
 	color: gray;
 	font-size: 22px;
 }
-
 /*chat*/
 .chat, .chatuno{
 	width: 350px;
@@ -128,7 +124,7 @@ body {
 	border-radius: 4%;
 	margin-bottom: 10px;
 	background-color:#58FA82;
-	margin-left: 460px;
+	margin-left: 440px;
 	height: 50px;
 	padding: 5px;
 	width: 150px;
@@ -142,16 +138,28 @@ body {
 .nombre3{
 	color: green;
 }
-.scroll{
+.scroll1{
   height: 580px;
+  width: 595px;
   overflow: scroll;
-  overflow-x:hidden
+  overflow-x:hidden;
+  background-image: url(../image/chat-panel-bg.png);
 }
 /*buscador*/
 .buscador{
 	border: 1px solid #BDBDBD;
-	margin-left: 100px;
 	width: 400px;
 	padding: 15px;
-	width: 550px;
+	width: 615px;
+  margin-left: -20px;
 }
+
+/*responsive*/
+@media (min-width: 668px) and  (max-width: 900px) {
+  .col-md-4{
+    width: 100%;
+  }
+  .col-md-8{
+    width: 100%;
+    margin-left: -60px;
+  }
